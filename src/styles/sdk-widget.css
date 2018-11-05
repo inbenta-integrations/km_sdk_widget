@@ -1,0 +1,383 @@
+@font-face {
+    font-family: "inbenta-app-icons";
+    src: url("https://cdn.inbenta.io/static/fonts/inbenta-app-icons.eot");
+    src: url("https://cdn.inbenta.io/static/fonts/inbenta-app-icons.eot?#iefix") format("embedded-opentype"), url("https://cdn.inbenta.io/static/fonts/inbenta-app-icons.woff") format("woff"), url("https://cdn.inbenta.io/static/fonts/inbenta-app-icons.ttf") format("truetype"), url("https://cdn.inbenta.io/static/fonts/inbenta-app-icons.svg#inbenta-app-icons") format("svg");
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'inbentaMontserrat';
+    src: url("https://cdn.inbenta.io/static/fonts/montserrat-medium-webfont.woff2") format("woff2"), url("https://cdn.inbenta.io/static/fonts/montserrat-medium-webfont.woff") format("woff");
+    font-weight: 500;
+    font-style: normal; 
+}
+.inbenta-km-icon {
+    font-family: "inbenta-app-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin-bottom: 0;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+.inbenta-km-icon--close:before {
+    content: "\6b"; 
+}
+.inbenta-km-icon--minimize:before {
+  content: "\48"; 
+}
+.inbenta-km-icon--question-filled:before{
+    content: '\2665';
+}
+.inbenta-km-icon--arrow-filled-left:before {
+  content: "9"; 
+}
+.inbenta-km--hide {visibility: hidden;}
+.inbenta-km--hidden{ display: none !important;}
+.inbenta-km-widged-container {display: flex;}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.inbenta-km-widget {
+    position: fixed!important;
+    right: 24px!important;
+    bottom: 38px!important;
+    width: 336px;
+    border: 0 solid transparent;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.12);
+}
+
+/** BANNER **/
+.inbenta-km-banner {
+    position: fixed;
+    right: 24px!important;
+    bottom: 24px!important;
+    transition: all .2s cubic-bezier(.25,.75,.5,1.4) 0s;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center; 
+    font-family: 'Open Sans',sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background: #5BB7B3;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.26), 0 10px 20px 0 rgba(0,0,0,0.19);
+    text-transform: uppercase;
+    height: 64px;
+    width: 64px;
+    line-height: 30px;
+    font-size: 15px;
+    letter-spacing: .4px;
+    text-align: center;
+}
+
+.inbenta-km-banner:hover {
+    transition: all .2s cubic-bezier(.25,.75,.5,1.4) 0s;
+    background: #3A8682;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.16), 0 3px 12px 0 rgba(0,0,0,0.08);
+    outline: none!important;
+
+}
+.inbenta-km-banner .inbenta-km-icon--question-filled:before{
+    font-size: 32px;
+}
+/**WIDGET HEADER**/
+.inbenta-km-widget-header {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    background-color: #64608F;
+    color: #DCDCE6;
+    padding: 8px 16px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.16), 0 3px 12px 0 rgba(0,0,0,.08);
+    line-height: 32px;
+    font-family: 'inbentaMontserrat',sans-serif;
+    border-radius: 4px 4px 0px 0px;
+    padding: 8px 16px;
+    border: none;
+    line-height: 24px;
+    font-size: 15px;
+    letter-spacing: .4px;
+    text-align: center;
+
+}
+.inbenta-km-widget-header .header__title{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-self: center;
+    align-self: center;   
+    margin: 0 auto;
+    color: #FFF;
+}
+.inbenta-km-widget-header .header__actions {
+    display: flex;
+    align-items: center;
+}
+
+.inbenta-km-widget-header .header__actions__icon{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center; 
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    
+}
+.inbenta-km-widget-header .header__actions__icon:hover{
+    color: #FFF;
+    background: #7C79A1;
+    border-radius: 100%;
+    
+}
+.inbenta-km-widget-header .header__actions {
+    display: flex;
+    align-items: center;
+}
+/**WIDGET BODY**/
+.inbenta-km-widget-body {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-grow: 2;
+    -ms-flex-grow: 2;
+    flex-grow: 2;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    height: 524px;
+    overflow: auto;
+    font-size: 12.15px;
+}
+
+.inbenta-km-widget-body .inbenta-km__autocompleter{
+    top: 88%;
+    font-size: 12.15px;
+    max-width: 304px;
+    margin: 0 16px 0;
+    border: 0;
+}
+.inbenta-km-widget-body .inbenta-km__autocompleter__link{
+    padding: 8px;   
+}
+.inbenta-km-widget-body .inbenta-km__autocompleter--selected{
+    background: #dcdcdc;
+}
+.inbenta-km-widget-body .inbenta-km__search{
+    padding: 16px;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(61,63,67,0.12);
+}
+.inbenta-km-widget-body .inbenta-km__search .inbenta-km__search__form .form__input.inbenta-km-input{
+    height: 40px;
+    font-size: 12.15px;
+    border: 0;
+}
+.inbenta-km-widget-body .inbenta-km__search .inbenta-km__search__form .form__button .inbenta-km-button{
+    -webkit-justify-content:center;
+    -ms-justify-content: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background: #5BB7B3;
+    border: 0;
+}
+.inbenta-km-widget-body .inbenta-km__search__form .form__button .inbenta-km-button .inbenta-km-icon:before{
+    font-size: 18px;
+    content: '\49';
+}
+.inbenta-km-widget-body .inbenta-km-home,
+.inbenta-km-widget-body .inbenta-km-categories,
+.inbenta-km-widget-body .inbenta-km__results__not-found,
+.inbenta-km-widget-body .contents__title{
+    padding: 0 16px 0;
+}
+.inbenta-km-widget-body .inbenta-km__popular{
+    margin: 0 0 24px;
+}
+.inbenta-km-widget-body .inbenta-km-title,
+.inbenta-km-widget-body .inbenta-km-subtitle,
+.inbenta-km-widget-body .container__category-name__title{
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.inbenta-km-widget-body .inbenta-km__faq{
+    margin-bottom: 8px;
+}
+.inbenta-km-widget-body .inbenta-km__faq .title__faq{
+    padding: 0;
+}
+.inbenta-km-widget-body .inbenta-km__results__contents .inbenta-km__faqs{
+    background: transparent;
+    box-shadow: none;
+    padding: 0 16px;
+}
+.inbenta-km-widget-body .inbenta-km__results__not-found .not-found__text{
+    font-size: 12.5px;
+}
+/**Rating**/
+.inbenta-km-widget-body .inbenta-km__rating{
+    font-size: 12.15px;
+    line-height: 20px;
+    border-radius: 0 0 4px 4px;
+    min-height: 48px;
+}
+.inbenta-km-widget-body .inbenta-km__rating__comment{
+    -webkit-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.inbenta-km-widget-body .inbenta-km__rating .inbenta-km-input{
+    margin: 0;
+    height: auto;
+    max-height: 40px;
+    resize: none;
+    -webkit-appearance: none;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 18px;
+    font-size: 12.5px;
+    line-height: 18px;
+    border-radius: 4px 0px 0px 4px;
+    vertical-align: middle;
+    padding: 10px 12px;
+    box-sizing: border-box; 
+}
+.inbenta-km-widget-body .inbenta-km__rating .inbenta-km-button .inbenta-km-icon--no:before,
+.inbenta-km-widget-body .inbenta-km__rating .inbenta-km-button .inbenta-km-icon--yes:before{
+    font-size: 12px;
+    line-height: 2;
+}
+.inbenta-km-widget-body span.inbenta-km-button__icon.inbenta-km-icon.inbenta-km-icon--send:before{
+    content: '\28';
+    font-size: 18px;
+    color: #FFF;
+}
+.inbenta-km-widget-body  .inbenta-km__rating__comment .comment__feedback{
+    margin-top: 12px;
+}
+.inbenta-km-widget-body .inbenta-km__rating .comment__feedback__button .inbenta-km-button__text{
+    display: none;
+}
+.inbenta-km-widget-body .inbenta-km__rating .comment__feedback__button .inbenta-km-button{
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    height: 38px;
+    width: 38px;
+    padding: 0;   
+    border-radius: 0px 4px 4px 0;
+}
+
+/**Categories**/
+.inbenta-km__categories{
+    margin-bottom: 24px;
+}
+.inbenta-km__categories .inbenta-km-title{
+    margin-bottom: 8px;
+}
+.inbenta-km-widget-body .inbenta-km__categories__container .container__category-name{
+    padding: 0 0 8px;
+}
+.inbenta-km-widget-body  .inbenta-km__categories .container__category__group{
+    margin: 0 -8px 0 !important;
+}
+.inbenta-km-widget-body  .inbenta-km__category{
+    -webkit-flex-basis: 50%;
+    -ms-flex-basis: 50%;
+    flex-basis: 50%;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    margin: 0 !important;
+    padding: 8px;
+    background: #FFF;
+    box-shadow: none;
+    background: transparent;
+}
+.inbenta-km-widget-body  .inbenta-km__category:hover{
+    box-shadow: none;
+}
+.inbenta-km-widget-body  .inbenta-km__category:only-child{
+    -webkit-flex-grow: 2;
+    -ms-flex-grow: 2;
+    flex-grow: 2;   
+}
+.inbenta-km-widget-body .inbenta-km__category .content-category__title{
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.16), 0 3px 12px 0 rgba(0,0,0,.08);
+}
+.inbenta-km-widget-body .inbenta-km__category .content-category__title:hover{
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2), 0 1px 3px 0 rgba(0,0,0,.1);
+}
+.inbenta-km-widget-body  .inbenta-km__category .content-category__icon{
+    display: none;
+}
+.inbenta-km-widget-body .container__category-contents{
+    margin-top: 8px;
+}
+/** POWERED **/
+.inbenta-km-widget-powered img{
+    position: absolute;
+    right: 0;
+    width: 38px;
+    margin-top: 12px;
+}
+@media (max-width: 608px){
+    .inbenta-km-widget-body .inbenta-km__rating__comment .comment__feedback{
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+}
+@media (max-width: 595px){
+    body .inbenta-km-widget-body .inbenta-km__rating .comment__phrase{
+        margin: 0;
+    }
+    body .inbenta-km-widget-body .inbenta-km__rating .comment__feedback .inbenta-km-input{
+        margin: 0;
+    }
+}
+@media (max-width: 520px){
+    .inbenta-km-widget{
+        top: 0px;
+        bottom: 0px !important;
+        right: 0px !important;
+        left: 0px !important;
+        width: 100%;
+    }
+    .inbenta-km-widget-body{
+        height: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inbenta Acme</title>
+    <script src="./src/js/sdk-widget.js"></script>
+    <link rel="icon" href="https://www.inbenta.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./src/styles/sdk-widget.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.inbenta.cloud/default/assets/styles/styles.css">
+</head>
+<body>
+<div class="inbenta-helpsite">
+    <div class="inbenta-helpsite__header">
+        <div class="inbenta-helpsite__header__container">
+            <div class="container__top">
+                <a href="https://www.inbenta.com" class="container__logo" target="_blank">
+                    in<span>b</span>enta
+                </a>
+                <div class="container__links">
+                    <a href="#">Products</a>
+                    <a href="#">Solutions</a>
+                    <a href="#">Contact</a>
+                    <a href="#">More</a>
+                </div>
+                <div class="container__buttons">
+                    <button class="button--secondary">
+                        Log in
+                    </button>
+                </div>
+            </div>
+            <div class="container__center">
+                <h3>Welcome to</h3>
+                <h1>Demo Helpsite</h1>
+            </div>
+            <div class="container__bottom">
+                <button class="button button--big">SEE MORE</button>
+            </div>
+        </div>
+    </div>
+    <div class="inbenta-helpsite__body" id="inbenta-body">
+        <div class="banner-home">
+            <div class="banner-home__pic">
+                <i class="icon--play icon-info"></i>
+            </div>
+            <div class="banner-home__text">
+                <h2>Here you can create a banner if you like.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius justo nulla, sed dapibus mauris blandit at.</p>
+                <button class="button button--big">
+                    Create banner
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="inbenta-helpsite__footer">
+        <div class="inbenta-helpsite__footer__container">
+            <a href="https://www.inbenta.com" class="container__logo" target="_blank">
+                in<span>b</span>enta
+            </a>
+            <div class="container__links">
+                <a href="#">Learn More</a>
+                <a href="#">About Us</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="container__buttons">
+                <button class="button-icon"><i class="icon--twitter"></i>  </button>
+                <button class="button-icon"><i class="icon--facebook"></i> </button>
+                <button class="button-icon"><i class="icon--pinterest"></i></button>
+                <button class="button-icon"><i class="icon--linkedin"></i> </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    createInbentaKmSDKWidget(
+        "1.19.0", // SDK version
+        "", // Domain key
+        "", // API key
+        {} // SDK configuration
+    );
+</script>
+</body>
